@@ -1,6 +1,10 @@
 
 import { Geist, Geist_Mono, Noto_Serif_Bengali } from "next/font/google";
 import "./globals.css";
+import Navbar from "../components/shared/Navbar";
+import CategoryNav from "@/components/shared/CategoryNav";
+import Marquee from "@/components/shared/Marquee";
+import { Suspense } from "react";
 
 const notoSerifBengali = Noto_Serif_Bengali({
 
@@ -30,7 +34,20 @@ export default function RootLayout({ children }) {
       data-theme='light'
       className={`${notoSerifBengali.className} ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Navbar/>
+        <CategoryNav/>
+        <Suspense
+  fallback={
+    <div className="h-12 flex items-center justify-center bg-gray-100 text-sm text-gray-500">
+      বাজারদর লোড হচ্ছে...
+    </div>
+  }
+>
+  <Marquee />
+</Suspense>
+        {children}
+        </body>
     </html>
   );
 }
