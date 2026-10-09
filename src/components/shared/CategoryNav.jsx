@@ -7,7 +7,7 @@ const CategoryNav = () => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    fetch("https://api.abcz.workers.dev/api/bazardor/categories")
+    fetch("https://api.api-store.workers.dev/api/bazardor/categories")
       .then((res) => res.json())
       .then((data) => setCategories(data))
       .catch((error) => console.log(error));

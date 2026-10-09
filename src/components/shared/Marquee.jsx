@@ -3,7 +3,7 @@ import MarqueeText from "react-marquee-text";
 import "react-marquee-text/dist/styles.css";
 
 const Marquee = async () => {
-  const res = await fetch("https://api.abcz.workers.dev/api/bazardor/products");
+  const res = await fetch("https://api.api-store.workers.dev/api/bazardor/products");
 
   if (!res.ok) {
     throw new Error("Failed to fetch product prices");

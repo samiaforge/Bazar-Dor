@@ -2,7 +2,7 @@ import React from "react";
 import ProductCard from "./ProductCard";
 
 const getProducts = async () => {
-  const res = await fetch("https://api.abcz.workers.dev/api/bazardor/products");
+  const res = await fetch("https://api.api-store.workers.dev/api/bazardor/products");
   if (!res.ok) {
     throw new Error("Failed to fetch products");
   }
@@ -37,7 +37,7 @@ const Products = async () => {
     .slice(0, 6);
 
   const renderProducts = (products) => (
-    <div className="grid grid-cols-1 gap-5 pb-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    <div className="grid grid-cols-1 gap-5 pb-12 sm:grid-cols-2 lg:grid-cols-3 ">
       {products.map((product) => (
         <ProductCard
           key={product.id}
