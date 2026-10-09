@@ -6,6 +6,7 @@ import CategoryNav from "@/components/shared/CategoryNav";
 import Marquee from "@/components/shared/Marquee";
 import { Suspense } from "react";
 
+
 const notoSerifBengali = Noto_Serif_Bengali({
 
   subsets: ["latin", "bengali"],
@@ -34,6 +35,13 @@ export default function RootLayout({ children }) {
       data-theme='light'
       className={`${notoSerifBengali.className} ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  />
+</head>
       <body className="min-h-full flex flex-col">
         <Navbar/>
         <CategoryNav/>
@@ -45,6 +53,7 @@ export default function RootLayout({ children }) {
   }
 >
   <Marquee />
+  
 </Suspense>
         {children}
         </body>
