@@ -26,7 +26,7 @@ const ProductCard = ({ product }) => {
   const unitName =
     unit === "kg"
       ? "কেজি"
-      : unit === "liter"
+      : unit === "litre"
         ? "লিটার"
         : unit === "piece"
           ? "পিস"
