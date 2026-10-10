@@ -41,12 +41,12 @@ const ProductCard = ({ product }) => {
 
   return (
     <Link
-      href={`/products/${id}`}
+      href={`/product/${slug}`}
       className=" block rounded-xl border border-gray-200 bg-white p-4 hover:shadow-lg"
     >
       <div className="flex items-center gap-3">
   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-gray-100 text-2xl">
-    {image || categoryIcon || "🛒"}
+    {image || categoryIcon}
   </div>
 
  <div>

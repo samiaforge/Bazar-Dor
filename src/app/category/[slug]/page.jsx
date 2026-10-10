@@ -7,11 +7,11 @@ const CategoryPage = async ({ params, searchParams }) => {
   const { slug } = await params;
   const { sort = "default" } = await searchParams;
 
-  const [categoriesRes, productsRes] = await Promise.all([
-    fetch("https://api.api-store.workers.dev/api/bazardor/categories"),
-    fetch("https://api.abcz.workers.dev/api/bazardor/products"),
-  ]);
-
+  
+const [categoriesRes, productsRes] = await Promise.all([
+  fetch("https://openapi.programming-hero.com/api/bazardor/categories"),
+  fetch("https://openapi.programming-hero.com/api/bazardor/products"),
+]);
 
 
   if (!categoriesRes.ok || !productsRes.ok) {
