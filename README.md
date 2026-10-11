@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🛒 বাজার দর | BazarDor
 
-## Getting Started
+**BazarDor** is a web-based marketplace information platform that helps users explore everyday products and check their prices in one place. It provides a simple, user-friendly interface for browsing products and accessing product details.
 
-First, run the development server:
+## ✨ Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **🛍️ Product Browsing:** Explore available products through a clean and organized interface.
+- **🔎 Product Details:** View individual product information on dedicated product pages.
+- **🔐 User Authentication:** Create an account, sign in, and sign out securely.
+- **🌐 Social Login:** Sign in using Google and GitHub accounts.
+- **👤 User Profile:** View account information through a personalized profile page.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Technologies Used
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Next.js** — React framework for building the web application
+- **React** — Component-based user interface
+- **Tailwind CSS** — Responsive styling and layout
+- **Better Auth** — Authentication and session management
+- **MongoDB** — Database for storing application and authentication data
+- **Google OAuth & GitHub OAuth** — Social authentication
+- **JavaScript** — Application logic
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+Make sure you have Node.js and npm installed.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the repository:
 
-## Deploy on Vercel
+   ```bash
+   git clone YOUR_GITHUB_REPOSITORY_URL
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Navigate to the project directory:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   cd bazar-dor
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Create a `.env.local` file in the project root and configure the required environment variables for MongoDB, Better Auth, and any OAuth providers you want to enable.
+
+5. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+6. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 📁 Project Purpose
+
+BazarDor aims to make product information easier to explore through a straightforward, accessible, and responsive web experience.
+
+## 👩‍💻 Developer
+
+Developed as a web development project using modern JavaScript technologies.
+
+---
+
+⭐ If you find this project useful, consider giving the repository a star!
