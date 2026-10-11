@@ -6,6 +6,7 @@ import CategoryNav from "@/components/shared/CategoryNav";
 import Marquee from "@/components/shared/Marquee";
 import { Suspense } from "react";
 import { Toaster } from "react-hot-toast";
+import Footer from "@/components/shared/Footer";
 
 
 const notoSerifBengali = Noto_Serif_Bengali({
@@ -58,6 +59,7 @@ export default function RootLayout({ children }) {
 </Suspense>
  <Toaster position="top-center" />
         {children}
+        <Footer/>
         </body>
     </html>
   );
