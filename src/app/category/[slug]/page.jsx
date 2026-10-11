@@ -1,5 +1,7 @@
 import Link from "next/link";
 import ProductCard from "@/components/homepage/ProductCard";
+import { redirect } from "next/navigation";
+import { getSession } from "@/lib/get-session";
 
 
 
@@ -7,7 +9,15 @@ const CategoryPage = async ({ params, searchParams }) => {
   const { slug } = await params;
   const { sort = "default" } = await searchParams;
 
+
   
+    const session = await getSession();
+
+if (!session) {
+  redirect(`/signin?callbackURL=${encodeURIComponent(`/category/${slug}`)}`);
+}
+
+
 const [categoriesRes, productsRes] = await Promise.all([
   fetch("https://openapi.programming-hero.com/api/bazardor/categories"),
   fetch("https://openapi.programming-hero.com/api/bazardor/products"),

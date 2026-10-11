@@ -1,12 +1,21 @@
 
 import Link from "next/link";
-// import { connection } from "next/server";
+import { redirect } from "next/navigation";
+import { getSession } from "@/lib/get-session";
+
+export const instant = false;
 
 const ProductDetailsPage = async ({ params }) => {
   const { slug } = await params;
 
  
- 
+ const session = await getSession();
+
+if (!session) {
+  redirect(
+    `/signin?callbackURL=${encodeURIComponent(`/product/${slug}`)}`
+  );
+}
 
 const res = await fetch(
   "https://openapi.programming-hero.com/api/bazardor/products",
