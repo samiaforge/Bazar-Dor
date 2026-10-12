@@ -54,7 +54,7 @@ Make sure you have Node.js and npm installed.
    npm run dev
    ```
 
-6. Open [http://localhost:3000](http://localhost:3000) in your browser.
+6. Open (bazar-dor-psi-seven.vercel.app) in your browser.
 
 ## 📁 Project Purpose
 
