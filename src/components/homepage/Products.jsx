@@ -59,7 +59,7 @@ const Products = async () => {
 
   return (
     <section id="product" className="scroll-mt-24 bg-[#f4f9f1]">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div id="all-products" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {allProducts.length === 0 ? (
           <p className="py-12 text-center text-gray-500">
             এই মুহূর্তে পণ্যের তথ্য পাওয়া যাচ্ছে না।

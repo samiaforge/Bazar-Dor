@@ -40,7 +40,7 @@ const Banner = () => {
           </p>
 
           <Link
-            href="/products"
+            href="/#all-products"
             className="mt-7 inline-flex items-center gap-2 rounded-xl bg-green-600 px-6 py-3.5 font-semibold text-white shadow-md transition hover:bg-green-700 hover:shadow-lg"
           >
             সব পণ্য দেখুন
